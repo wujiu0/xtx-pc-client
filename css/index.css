@@ -1,0 +1,84 @@
+.banner {
+  position: relative;
+  height: 500px;
+  background-image: url(../uploads/banner_1.png);
+  background-color: pink;
+}
+
+.banner .aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 500px;
+  /* background-color: #000;
+  opacity: 0.8; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .aside a {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  width: 250px;
+  height: 50px;
+
+  line-height: 50px;
+  color: #fff;
+}
+.banner .aside a span {
+  margin-left: 15px;
+  font-size: 14px;
+}
+.banner .aside a:hover {
+  background-color: #27ba9b;
+}
+.banner .aside a::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  width: 6px;
+  height: 11px;
+
+  background-image: url(../images/sprites.png);
+  background-position: -80px -110px;
+}
+
+.banner .prev,
+.banner .next {
+  position: absolute;
+  top: 228px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.banner .prev {
+  left: 260px;
+  background-image: url(../images/sprites.png);
+  background-position: 13px -60px;
+}
+.banner .next {
+  right: 10px;
+  background-image: url(../images/sprites.png);
+  background-position: -25px -60px;
+}
+
+.banner ol {
+  position: absolute;
+  left: 680px;
+  bottom: 30px;
+}
+.banner ol li {
+  float: left;
+  margin-right: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.43);
+}
+.banner ol li.active {
+  background-color: #fff;
+}
